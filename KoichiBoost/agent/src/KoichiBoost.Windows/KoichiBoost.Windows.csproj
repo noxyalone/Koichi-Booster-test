@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>12</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Management" Version="8.0.0" />
+    <PackageReference Include="System.ServiceProcess.ServiceController" Version="8.0.0" />
+    <!-- Sensores (temperatura) — usado SOMENTE com --sensors. Veja README sobre Vanguard. -->
+    <PackageReference Include="LibreHardwareMonitorLib" Version="0.9.4" />
+    <ProjectReference Include="..\KoichiBoost.Core\KoichiBoost.Core.csproj" />
+  </ItemGroup>
+</Project>
